@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Collab Project</title>
-    <!-- Fonts -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Collab Project</title>
+        <!-- Fonts -->
 
-    <!-- Base -->
-    <link rel="stylesheet" href="./assets/styles/base/reset.css" />
+        <!-- Base -->
+        <link rel="stylesheet" href="./features/styles/base/reset.css" />
 
-    <link rel="stylesheet" href="./assets/styles/dist/main.css" />
-  </head>
-  <body>
+        <link rel="stylesheet" href="./features/styles/dist/main.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="main__header"></header>
 
-    <!-- Header -->
-     <header class="main__header"></header>
+        <!-- Main -->
+        <main>
+            <!-- Recipes -->
+            <section class="recipes__section"></section>
+            <!-- Calendar -->
+            <section class="calendar__section">
+                <div class="calendar__section__wrapper">
+                    <h2>Weekly Meal Plan</h2>
+                    <div class="calendar__section__wrapper__calendar">
+                        <div class="calendar__section__wrapper__calendar__day">
+                            <div>
+                                <h3>Monday</h3>
+                            </div>
+                            <div>
+                                <span>Breakfast</span>
+                                <div>
+                                    <img
+                                        src="https://www.dontgobaconmyheart.co.uk/wp-content/uploads/2022/05/avocado-egg-toast.jpg"
+                                        alt=""
+                                    />
+                                    <p>Avocado Toast</p>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-     <!-- Main -->
-      <main>
-        <!-- Recipes -->
-        <section class="recipes__section"></section>
-        <!-- Calendar -->
-         <section class="calendar__section"></section>
+            <!-- Popup section -->
+            <section class="popup__section"></section>
+        </main>
 
-         <!-- Popup section -->
-          <section class="popup__section"></section>
-      </main>
-
-    <!-- Scripts -->
-    <script src="./assets/scripts/app.js"></script>
-  </body>
+        <!-- Scripts -->
+        <script src="./assets/scripts/app.js"></script>
+    </body>
 </html>

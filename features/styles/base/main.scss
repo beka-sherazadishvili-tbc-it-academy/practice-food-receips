@@ -1,13 +1,14 @@
 @use "../components/header";
 @use "../layout/hero";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@use "../layout/calendar";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 body {
-  font-family: "Inter", sans-serif;
-  color: #333333;
+    font-family: "Inter", sans-serif;
+    color: #333333;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     gap: 40px;
