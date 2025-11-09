@@ -1,15 +1,19 @@
-const input = document.querySelector("#search");
-let currentRecipe = [];
-let searchRecipe = "";
+function search() {
+  const input = document.querySelector("#search");
 
-input.addEventListener("input", (e) => {
-    searchRecipe = e.target.value.trim();
+  input.addEventListener("input", (e) => {
+    const searchRecipe = e.target.value.trim().toLowerCase();
 
     if (searchRecipe) {
-        currentRecipe = myRecipes.find((item) => item.title.toLowerCase().includes(searchRecipe.toLowerCase()));
-        console.log(currentRecipe);
+      currentRecipes = myRecipes.filter((item) =>
+        item.title.toLowerCase().includes(searchRecipe)
+      );
     } else {
-        currentRecipe = myRecipes;
+      currentRecipes = myRecipes;
     }
 
-})
+    createCards();
+  });
+}
+
+search();

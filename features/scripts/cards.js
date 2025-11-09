@@ -1,8 +1,9 @@
 const cardsWrapper = document.querySelector(".recipes__section__wrapper");
+currentRecipes = myRecipes;
 function createCards() {
   cardsWrapper.innerHTML = "";
 
-  for (let item of myRecipes) {
+  for (let item of currentRecipes) {
     const cardDiv = document.createElement("div");
     cardDiv.className = "recipes__section__card";
     cardDiv.setAttribute("data-title", item.title);
@@ -25,8 +26,8 @@ function createCards() {
               </div>
 
               <div class="recipes__card__actions">
-                <button class="btn btn__view">View</button>
-                <button class="btn btn__edit">Edit</button>
+                <button class="btn btn__view" data-title="${item.title}">View</button>
+                <button class="btn btn__edit" data-title="${item.title}">Edit</button>
               </div>
             </div>
           </div>`;

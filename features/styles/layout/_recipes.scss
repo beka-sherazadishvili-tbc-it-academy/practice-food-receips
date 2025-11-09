@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-
+  padding: 3.5rem;
   font-family: "Inter", sans-serif;
 
   .recipes__title {
@@ -128,7 +128,7 @@
   }
 }
 .transparent-bg {
-  width: 100%;
+  width: 1440px;
   height: 100%;
   background-color: black;
   opacity: 0.5;
@@ -141,7 +141,7 @@
 .popupOverlay {
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 38%;
   transform: translate(-50%, -50%);
   width: 400px;
   min-height: 300px;

@@ -2,16 +2,18 @@
 @use "../layout/hero";
 @use "../layout/recipes";
 @use "../layout/calendar";
+@use "../components/add";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 body {
-    font-family: "Inter", sans-serif;
-    color: #333333;
+  font-family: "Inter", sans-serif !important;
+  color: #333333;
   background: linear-gradient(#fafafa, #fafafa),
     linear-gradient(#ffffff, #ffffff);
 }
 
-main  {
+
+main {
   display: flex;
   flex-direction: column;
   gap: 40px;
