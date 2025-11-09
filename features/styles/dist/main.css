@@ -1,0 +1,13 @@
+body {
+  font-family: "Inter", sans-serif;
+  color: #333333;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1440px;
+  width: 100%;
+  min-height: 2000px;
+}/*# sourceMappingURL=main.css.map */
